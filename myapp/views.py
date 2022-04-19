@@ -1,7 +1,9 @@
 from rest_framework import viewsets
-from .serializers import PostSerializer
-from .models import Post
+from .serializers import GoodsSerializer
+from .models import Goods
 
-class PostViewset(viewsets.ModelViewSet):
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
+class GoodsViewset(viewsets.ViewSet):
+    queryset = Goods.objects.all()
+    serializer_class = GoodsSerializer
+
+    

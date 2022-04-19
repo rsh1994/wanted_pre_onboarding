@@ -1,8 +1,8 @@
 from rest_framework import  serializers
-from .models import Post
+from .models import Goods
 
-class PostSerializer(serializers.ModelSerializer):
+class GoodsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Post
+        model = Goods
         fields = ('id','title', 'author','detail','one_amount','d_day')
 
