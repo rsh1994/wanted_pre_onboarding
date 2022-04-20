@@ -12,5 +12,5 @@ urlpatterns = [
     # path('article/', ArticleAPIView.as_view()),
     # path('detail/<int:id>/', ArticleDetails.as_view()),
     # path('generic/article/<int:id>/', GenericAPIView.as_view()),
-    path('viewset/', include(router.urls)),
+    path('', include(router.urls)),
 ]

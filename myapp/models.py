@@ -12,9 +12,9 @@ class Goods(models.Model):
     d_day = models.DateTimeField()
     created_at = models.DateTimeField(default=timezone.datetime.now)
 
-    funding_rate = models.IntegerField(null=True)
-    total_amount = models.IntegerField(null=True)
+    funding_rate = models.IntegerField(default=0)
+    total_amount = models.IntegerField(default=0)
     n = models.IntegerField(default=0)
-    
+
     def __str__(self):
         return self.title
