@@ -6,8 +6,8 @@ class GoodsSerializer(serializers.ModelSerializer):
         model = Goods
         fields = ['id','title', 'author','detail','one_amount','d_day','target_amount']
     
-    def create(self, **validated_data):
-        return Goods.objects.create(**validated_data)
+    # def create(self, validated_data):
+    #     return Goods.objects.create(validated_data)
 
 
 
